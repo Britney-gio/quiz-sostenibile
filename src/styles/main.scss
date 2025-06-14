@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import "/src/styles/variables";
 
 .home-background {
   background-image: url("/src/assets/1bg-textile.jpg");
@@ -29,7 +29,6 @@ h1 {
   font-size: 5rem;
   color: $nero-soft;
   margin-bottom: 1rem;
-
 }
 
 h2 {
