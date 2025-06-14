@@ -1,54 +1,92 @@
-# React + TypeScript + Vite
+# Quiz sulla Moda Sostenibile 👗🌱
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un'applicazione web interattiva realizzata in **React + TypeScript**, che propone un quiz a difficoltà progressiva per sensibilizzare l'utente sul tema della **moda sostenibile**.
 
-Currently, two official plugins are available:
+## 🎯 Obiettivo del progetto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Informare in modo coinvolgente e accessibile su pratiche sostenibili nel settore moda, attraverso un quiz con 5 domande a scelta multipla e feedback finale personalizzato.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ⚙️ Scelte tecniche
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### React + Vite
+
+- Utilizzato per performance elevate e rapidità di sviluppo.
+
+### TypeScript
+
+- Utilizzato in tutto il progetto per una tipizzazione rigorosa.
+- Ogni componente ha props e logica tipizzata per evitare errori a runtime.
+
+### Componenti principali
+
+- `Home.tsx`: schermata di benvenuto.
+- `QuizIntro.tsx`: istruzioni sul funzionamento del quiz.
+- `Quiz.tsx`: logica del quiz, punteggio e stato.
+- `Result.tsx`: risultato finale con livello assegnato.
+- `PageLayout.tsx`: struttura condivisa e coerente.
+
+### React Router
+
+- Navigazione tra le pagine (`/`, `/quizIntro`, `/quiz`, `/result`) usando `react-router-dom`.
+
+### SCSS
+
+- Separazione tra stile globale e responsive con variabili e media query.
+- Il file `responsive.scss` assicura una UX fluida su tutti i dispositivi.
+
+### Responsive design
+
+- Progetto ottimizzato per desktop, tablet e mobile.
+- Il box centrale si adatta in base alla dimensione dello schermo, mantenendo leggibilità e visibilità dello sfondo.
+
+### Favicon personalizzata
+
+- Una t-shirt verde con foglia per rappresentare il tema moda sostenibile.
+
+### Logica quiz
+
+- Domande progressivamente più complesse:
+  - 1–2: livello base
+  - 3–4: livello intermedio
+  - 5: livello esperto
+- Punteggio tracciato via stato React (`useState`) e inviato alla pagina risultato tramite `useNavigate`.
+
+---
+
+## ▶️ Come avviare il progetto in locale
+
+1. Clona il repository
+
+```bash
+git clone https://github.com/Britney-gio/quiz-sostenibile.git
+cd quiz-sostenibile
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Installa le dipendenze
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+3. Avvia il server di sviluppo
+
+```bash
+npm run dev
+```
+
+4. Apri il browser su http://localhost:5173 per visualizzare l'app
+
+## 👩‍💻 Autore
+
+<p align="left">
+  <img src="./src/assets/GN.jpg" alt="Logo Giorgia Nieli" width="100" />
+</p>
+
+Sviluppato da **Giorgia Nieli**  
+Per **AgenziaX** – Comunicazione creativa per una moda più responsabile ✨
+
+- 📧 Email: [giorgianieli@gmail.com](mailto:giorgianieli@gmail.com)
+- 💼 GitHub: [@Britney-gio](https://britney-gio.github.io/)
+- 🔗 LinkedIn: [linkedin.com/in/giorgia-nieli-98b0882b0](https://www.linkedin.com/in/giorgia-nieli-98b0882b0/)
