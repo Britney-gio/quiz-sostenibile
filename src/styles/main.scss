@@ -1,0 +1,88 @@
+@import "./variables.scss";
+
+.home-background {
+  background-image: url("/src/assets/1bg-textile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.home-box {
+  background-color: $beige-sabbia;
+  padding: 4rem 2rem;
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-size: 5rem;
+  color: $nero-soft;
+  margin-bottom: 1rem;
+
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: $grigio-testo;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: $grigio-testo;
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+
+  li {
+    font-size: 1.1rem;
+    color: $grigio-testo;
+    margin-bottom: 1rem;
+
+    &:before {
+      content: "•";
+      color: $oro-spento;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+button {
+  background-color: $oro-spento;
+  color: $beige-sabbia;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.footer-note {
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  color: $grigio-testo;
+}
