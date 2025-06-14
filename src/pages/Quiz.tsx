@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { questions } from "../data/questions";
 import type { Question } from "../data/questions";
 import PageLayout from "../components/PageLayout";
+import "../styles/quiz.scss";
 
 const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -31,10 +32,15 @@ const Quiz = () => {
       <h1>
         Domanda {currentQuestion + 1} di {questions.length}
       </h1>
-      <p>{question.text}</p>
-      <div>
+      <p className="quiz-question">{question.text}</p>
+
+      <div className="quiz-options">
         {question.options.map((option, index) => (
-          <button key={index} onClick={() => handleAnswerClick(index)}>
+          <button
+            key={index}
+            onClick={() => handleAnswerClick(index)}
+            className="quiz-option-button"
+          >
             {option}
           </button>
         ))}

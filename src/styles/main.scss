@@ -13,6 +13,7 @@
 }
 
 .home-box {
+  position: relative;
   background-color: $beige-sabbia;
   padding: 4rem 2rem;
   width: 100%;
@@ -84,4 +85,64 @@ button {
   margin-top: 3rem;
   font-size: 0.85rem;
   color: $grigio-testo;
+}
+
+.home-btn {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  width: 50px;
+  height: 36px;
+  border-radius: 6px;
+  background-color: $oro-spento;
+  border: none;
+  font-size: 0.9rem;
+  color: $beige-sabbia;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($oro-spento, 10%);
+  }
+}
+
+.result-box {
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: $bianco;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  .emoji {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: $nero-soft;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: $grigio-testo;
+  }
+}
+
+.result-base {
+  border-left: 6px solid #f1c40f;
+}
+
+.result-intermedio {
+  border-left: 6px solid #e67e22;
+}
+
+.result-esperto {
+  border-left: 6px solid #3498db;
 }
