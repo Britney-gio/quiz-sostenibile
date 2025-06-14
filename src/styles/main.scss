@@ -1,5 +1,6 @@
 @import "/src/styles/variables";
 
+
 .home-background {
   background-image: url("/src/assets/1bg-textile.jpg");
   background-size: cover;
@@ -146,3 +147,5 @@ button {
 .result-esperto {
   border-left: 6px solid #3498db;
 }
+
+@import "./responsive";

@@ -1,0 +1,60 @@
+@media (max-width: 768px) {
+  .home-background {
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .home-box,
+  .quiz-box,
+  .result-box {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    min-height: unset;
+    background-color: rgba(
+      245,
+      240,
+      230,
+      0.95
+    ); // beige con trasparenza leggera
+    border-radius: 1rem;
+    padding: 2rem 1.5rem 4rem; // aggiunto padding extra in basso per spazio al pulsante
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p,
+  ul li {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .home-btn {
+    width: 32px;
+    height: 32px;
+    bottom: 0.5rem; // leggermente più in basso
+    left: 0.5rem;
+  }
+
+  .emoji {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 1.8rem;
+    word-break: break-word;
+  }
+}
