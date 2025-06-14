@@ -1,5 +1,7 @@
+import PageLayout from "../components/PageLayout";
+
 function Result() {
-  return <div>RISULTATI PAG</div>;
+  return (<PageLayout>RISULTATI PAG</PageLayout>);
 }
 
 export default Result;

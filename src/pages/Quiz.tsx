@@ -1,5 +1,7 @@
+import PageLayout from "../components/PageLayout";
+
 function Quiz() {
-    return <div>PAGINA DEI QUIZ</div>
+  return <PageLayout>PAGINA DEI QUIZ</PageLayout>;
 }
 
 export default Quiz;

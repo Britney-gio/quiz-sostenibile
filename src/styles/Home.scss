@@ -29,6 +29,7 @@ h1 {
   font-size: 5rem;
   color: $nero-soft;
   margin-bottom: 1rem;
+
 }
 
 h2 {
@@ -43,6 +44,24 @@ p {
   line-height: 1.6;
   color: $grigio-testo;
   margin-bottom: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+
+  li {
+    font-size: 1.1rem;
+    color: $grigio-testo;
+    margin-bottom: 1rem;
+
+    &:before {
+      content: "•";
+      color: $oro-spento;
+      margin-right: 0.5rem;
+    }
+  }
 }
 
 button {

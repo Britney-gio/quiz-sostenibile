@@ -1,9 +1,11 @@
+import PageLayout from "../components/PageLayout";
+
 function NotFound() {
   return (
-    <div>
+    <PageLayout>
       <h1>ERRORE</h1>
       <p>Pagina inesistente</p>
-    </div>
+    </PageLayout>
   );
 }
 
