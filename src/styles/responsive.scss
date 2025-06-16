@@ -33,6 +33,13 @@
   button {
     padding: 0.8rem 1.5rem;
     font-size: 0.95rem;
+    &:active,
+    &:hover,
+    &:focus {
+      background-color: inherit !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
   }
 
   .home-btn {
@@ -53,12 +60,3 @@
     word-break: break-word;
   }
 }
-
-@media (hover: none) and (pointer: coarse) {
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: inherit;
-      outline: none;
-    }
-  }
