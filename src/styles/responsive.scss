@@ -11,14 +11,9 @@
     max-width: 350px;
     height: auto;
     min-height: unset;
-    background-color: rgba(
-      245,
-      240,
-      230,
-      0.95
-    ); 
+    background-color: rgba(245, 240, 230, 0.95);
     border-radius: 1rem;
-    padding: 2rem 1.5rem 4rem; 
+    padding: 2rem 1.5rem 4rem;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   }
 
@@ -43,7 +38,7 @@
   .home-btn {
     width: 32px;
     height: 32px;
-    bottom: 0.5rem; 
+    bottom: 0.5rem;
     left: 0.5rem;
   }
 
@@ -56,5 +51,11 @@
   h1 {
     font-size: 1.8rem;
     word-break: break-word;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  &:hover {
+    background-color: inherit;
   }
 }
