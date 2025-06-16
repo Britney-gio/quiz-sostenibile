@@ -8,11 +8,11 @@ Informare in modo coinvolgente e accessibile su pratiche sostenibili nel settore
 
 ---
 
-## ⚙️ Scelte tecniche
+## ⚙️ Scelte tecniche utilizzate
 
 ### React + Vite
 
-- Utilizzato per performance elevate e rapidità di sviluppo.
+- Utilizzati per performance elevate, rapidità di sviluppo, modularità del codice...
 
 ### TypeScript
 
@@ -25,11 +25,12 @@ Informare in modo coinvolgente e accessibile su pratiche sostenibili nel settore
 - `QuizIntro.tsx`: istruzioni sul funzionamento del quiz.
 - `Quiz.tsx`: logica del quiz, punteggio e stato.
 - `Result.tsx`: risultato finale con livello assegnato.
-- `PageLayout.tsx`: struttura condivisa e coerente.
+- `PageLayout.tsx`: struttura condivisa e coerente dello stile.
+- `NotFound.tsx`: schermata di errore nel caso in cui l'utente naviga in un percorso differente dai precedenti.
 
 ### React Router
 
-- Navigazione tra le pagine (`/`, `/quizIntro`, `/quiz`, `/result`) usando `react-router-dom`.
+- Navigazione tra le pagine (`/home`, `/quizIntro`, `/quiz`, `/result`) usando `react-router-dom`.
 
 ### SCSS
 
@@ -48,10 +49,34 @@ Informare in modo coinvolgente e accessibile su pratiche sostenibili nel settore
 ### Logica quiz
 
 - Domande progressivamente più complesse:
-  - 1–2: livello base
-  - 3–4: livello intermedio
-  - 5: livello esperto
-- Punteggio tracciato via stato React (`useState`) e inviato alla pagina risultato tramite `useNavigate`.
+  - 1° e 2°: livello facile
+  - 3° e 4°: livello intermedio
+  - 5°: livello esperto
+- Punteggio tracciato con Hook React (`useState`) e inviato alla pagina Result.tsx tramite `useNavigate`.
+- In base al punteggio raggiunto lo `switch statement` assegnerà un livello di conoscenza all'utente e un feedback personalizzato.
+
+---
+
+### Gestione delle domande
+
+- Il file `questions.ts` contiene l’array delle domande del quiz.
+- Ogni domanda è un oggetto con:
+  - `id`: identificativo univoco della domanda
+  - `text`: testo della domanda
+  - `options`: array con possibili risposte
+  - `correctIndex`: indice della risposta corretta
+- Questo approccio consente una facile manutenzione e scalabilità del quiz.
+
+---
+
+### 📁 Struttura del progetto
+
+src/
+├── assets/ # Immagini e icone
+├── components/ # Componenti riutilizzabili
+├── pages/ # Pagine principali (Home, NotFound, Quiz, QuizIntro, Result)
+├── styles/ # SCSS globali e responsive
+└── main.tsx # Entry point
 
 ---
 
@@ -90,3 +115,5 @@ Per **AgenziaX** – Comunicazione creativa per una moda più responsabile ✨
 - 📧 Email: [giorgianieli@gmail.com](mailto:giorgianieli@gmail.com)
 - 💼 GitHub: [@Britney-gio](https://britney-gio.github.io/)
 - 🔗 LinkedIn: [linkedin.com/in/giorgia-nieli-98b0882b0](https://www.linkedin.com/in/giorgia-nieli-98b0882b0/)
+
+---
