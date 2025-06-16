@@ -55,7 +55,10 @@
 }
 
 @media (hover: none) and (pointer: coarse) {
-  &:hover {
-    background-color: inherit;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: inherit;
+      outline: none;
+    }
   }
-}
