@@ -1,4 +1,3 @@
-import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import PageLayout from "../components/PageLayout";
 import "../styles/main.scss";
