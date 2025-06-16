@@ -2,6 +2,10 @@
 
 Un'applicazione web interattiva realizzata in **React + TypeScript**, che propone un quiz a difficoltà progressiva per sensibilizzare l'utente sul tema della **moda sostenibile**.
 
+👉 [**Vai al Quiz sulla Moda Sostenibile**](https://britney-gio.github.io/quiz-sostenibile/) 👈
+
+---
+
 ## 🎯 Obiettivo del progetto
 
 Informare in modo coinvolgente e accessibile su pratiche sostenibili nel settore moda, attraverso un quiz con 5 domande a scelta multipla e feedback finale personalizzato.
