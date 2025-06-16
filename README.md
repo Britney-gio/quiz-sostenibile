@@ -32,9 +32,10 @@ Informare in modo coinvolgente e accessibile su pratiche sostenibili nel settore
 - `PageLayout.tsx`: struttura condivisa e coerente dello stile.
 - `NotFound.tsx`: schermata di errore nel caso in cui l'utente naviga in un percorso differente dai precedenti.
 
-### React Router
+### 🧭 React Router DOM (`HashRouter`)
 
-- Navigazione tra le pagine (`/home`, `/quizIntro`, `/quiz`, `/result`) usando `react-router-dom`.
+- Navigazione tra le pagine: `/home`, `/quizIntro`, `/quiz`, `/result`, e `*` (404).
+- Utilizzo di `HashRouter` per garantire compatibilità con GitHub Pages.
 
 ### SCSS
 
@@ -78,9 +79,10 @@ Informare in modo coinvolgente e accessibile su pratiche sostenibili nel settore
 src/
 ├── assets/ # Immagini e icone
 ├── components/ # Componenti riutilizzabili
-├── pages/ # Pagine principali (Home, NotFound, Quiz, QuizIntro, Result)
+├── pages/ # Pagine principali
 ├── styles/ # SCSS globali e responsive
-└── main.tsx # Entry point
+├── questions.ts # Domande del quiz
+└── main.tsx # Entry point dell'app
 
 ---
 
